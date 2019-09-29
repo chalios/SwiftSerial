@@ -117,7 +117,10 @@ Add SwiftSerial as a dependency to your project by editing the `Package.swift` f
 let package = Package(
     name: "NameOfMyProject",
     dependencies: [
-        .Package(url: "https://github.com/yeokm1/SwiftSerial.git", majorVersion: 0),
+        .package(
+            url: "https://github.com/yeokm1/SwiftSerial.git", 
+            .upToNextMajor(from: "0.1.0")
+        ),
         ...
     ]
     ...
